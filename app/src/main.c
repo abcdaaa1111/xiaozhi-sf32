@@ -650,7 +650,7 @@ void check_low_power(void)
                                              xiaozhi_ui_task,
                                              NULL,
                                              &xiaozhi_ui_thread_stack[0],
-                                             XIAOZHI_UI_THREAD_STACK_SIZE,
+                                             XIAOZHI_UI_THREAD_STACK_SIZE + 4,
                                              30,
                                              10);
             if (result == RT_EOK) {
